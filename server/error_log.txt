@@ -1,0 +1,158 @@
+2025-12-03T22:55:21.075Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:23.077Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:25.092Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:27.090Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:29.090Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:58.783Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:55:59.601Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:01.607Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:03.608Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:05.607Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:07.605Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:09.606Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T22:56:11.604Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:09:24.584Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:823:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:09:25.431Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:823:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:09:27.439Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:823:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:09:29.438Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:823:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:09:31.422Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:823:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:13:54.174Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:13:54.717Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:13:56.725Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:851:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:14:06.938Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-03T23:14:08.727Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-04T19:39:00.804Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-04T19:39:01.658Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-04T19:39:03.672Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-04T19:39:05.661Z Error in start-game: ReferenceError: totalPlayers is not defined
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:865:62
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T17:18:29.291Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+2025-12-16T17:18:31.284Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+2025-12-16T17:18:33.289Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+2025-12-16T17:18:35.290Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+2025-12-16T17:18:58.294Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+2025-12-16T17:19:37.244Z Error in /api/lobby/room/:id: JsonWebTokenError: jwt malformed
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:70:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
+    at param (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:600:14)
+    at param (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:610:14)
+2025-12-16T17:19:58.288Z Error in /api/lobby/room/:id: TokenExpiredError: jwt expired
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\index.js:702:29
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\maksy\OneDrive\Pulpit\Decantry\server\node_modules\router\index.js:295:15
