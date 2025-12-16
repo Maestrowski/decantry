@@ -68,7 +68,7 @@ app.get('/auth/google', (req, res, next) => {
 app.get('/auth/google/signup', (req, res, next) => {
     const { username } = req.query;
     if (!username) {
-        return res.redirect('http://localhost:5173/signup?error=UsernameRequired');
+        return res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/signup?error=UsernameRequired`);
     }
     const state = Buffer.from(JSON.stringify({ action: 'signup', username })).toString('base64');
     passport.authenticate('google', {
@@ -106,14 +106,14 @@ app.get('/auth/google/callback',
                 const token = jwt.sign({ id: newUser.id, username: newUser.username }, JWT_SECRET, { expiresIn: '1h' });
 
                 // Redirect to frontend with token
-                res.redirect(`http://localhost:5173/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify(newUser))}`);
+                res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify(newUser))}`);
 
             } else {
                 // Login
                 const userResult = await db.query('SELECT * FROM accounts WHERE email = $1 OR google_id = $2', [email, googleId]);
 
                 if (userResult.rows.length === 0) {
-                    return res.redirect('http://localhost:5173/login?error=UserNotFound');
+                    return res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/login?error=UserNotFound`);
                 }
 
                 const user = userResult.rows[0];
@@ -126,11 +126,11 @@ app.get('/auth/google/callback',
                 const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '1h' });
 
                 // Redirect to frontend with token
-                res.redirect(`http://localhost:5173/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify({ id: user.id, username: user.username, email: user.email }))}`);
+                res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify({ id: user.id, username: user.username, email: user.email }))}`);
             }
         } catch (err) {
             console.error(err);
-            res.redirect('http://localhost:5173/login?error=ServerError');
+            res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/login?error=ServerError`);
         }
     }
 );

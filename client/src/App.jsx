@@ -44,7 +44,8 @@ function App() {
       } else {
         // Create guest session
         try {
-          const response = await fetch('http://localhost:3000/api/auth/guest', { method: 'POST' });
+          const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+          const response = await fetch(`${API_URL}/api/auth/guest`, { method: 'POST' });
           if (response.ok) {
             const data = await response.json();
             localStorage.setItem('decantry_token', data.token);

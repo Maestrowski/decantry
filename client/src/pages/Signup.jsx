@@ -16,7 +16,8 @@ const Signup = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/auth/signup', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            const response = await fetch(`${API_URL}/api/auth/signup`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, email, password })
@@ -128,7 +129,8 @@ const Signup = () => {
                             alert('Please enter a username first!');
                             return;
                         }
-                        window.location.href = `http://localhost:3000/auth/google/signup?username=${encodeURIComponent(username)}`;
+                        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+                        window.location.href = `${API_URL}/auth/google/signup?username=${encodeURIComponent(username)}`;
                     }}
                     style={{
                         display: 'flex',

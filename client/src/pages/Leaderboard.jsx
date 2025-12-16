@@ -13,7 +13,8 @@ const Leaderboard = () => {
     React.useEffect(() => {
         const fetchLeaderboard = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/api/leaderboard?mode=${activeTab}`);
+                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+                const response = await fetch(`${API_URL}/api/leaderboard?mode=${activeTab}`);
                 if (response.ok) {
                     const result = await response.json();
                     // Map to format { rank, user, score }

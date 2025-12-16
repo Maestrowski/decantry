@@ -20,7 +20,8 @@ const CreateTable = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/lobby/create', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            const response = await fetch(`${API_URL}/api/lobby/create`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

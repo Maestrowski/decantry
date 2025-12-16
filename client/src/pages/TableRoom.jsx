@@ -26,7 +26,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            const response = await fetch('http://localhost:3000/api/lobby/invite', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            const response = await fetch(`${API_URL}/api/lobby/invite`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -55,7 +56,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            await fetch('http://localhost:3000/api/lobby/kick', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/kick`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -75,7 +77,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            await fetch('http://localhost:3000/api/lobby/transfer-host', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/transfer-host`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -95,7 +98,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            const response = await fetch(`http://localhost:3000/api/lobby/room/${id}`, {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            const response = await fetch(`${API_URL}/api/lobby/room/${id}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
@@ -153,7 +157,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            await fetch('http://localhost:3000/api/lobby/leave', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/leave`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -173,7 +178,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            await fetch('http://localhost:3000/api/lobby/update-mode', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/update-mode`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -191,7 +197,8 @@ const TableRoom = () => {
         if (!token) return;
 
         try {
-            await fetch('http://localhost:3000/api/lobby/toggle-ready', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/toggle-ready`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -210,7 +217,8 @@ const TableRoom = () => {
         const token = localStorage.getItem('decantry_token');
         if (!token) return;
         try {
-            await fetch('http://localhost:3000/api/lobby/start-game', {
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+            await fetch(`${API_URL}/api/lobby/start-game`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
