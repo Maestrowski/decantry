@@ -14,6 +14,21 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'Decantry API is running' });
 });
 
+// DEBUG: Verify DB Connection on Startup
+(async () => {
+    try {
+        console.log("🔍 Checking Database Connection...");
+        const res = await db.query("SELECT current_database(), inet_server_addr()");
+        console.log("✅ Connected to DB:", res.rows[0]);
+
+        console.log("🔍 Checking 'accounts' table schema...");
+        const cols = await db.query("SELECT column_name FROM information_schema.columns WHERE table_name='accounts'");
+        console.log("📜 Columns in 'accounts':", cols.rows.map(r => r.column_name));
+    } catch (err) {
+        console.error("❌ STARTUP DB CHECK FAILED:", err);
+    }
+})();
+
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
@@ -96,9 +111,13 @@ app.get('/auth/google/callback',
                 }
 
                 // Create user
+                // OAuth users don't have a password, but DB requires one. Generate a random secure one.
+                const randomPassword = Math.random().toString(36).slice(-8) + Math.random().toString(36).slice(-8);
+                const hashedPassword = await bcrypt.hash(randomPassword, 10);
+
                 const newUserResult = await db.query(
-                    'INSERT INTO accounts (username, email, google_id) VALUES ($1, $2, $3) RETURNING id, username, email',
-                    [username, email, googleId]
+                    'INSERT INTO accounts (username, email, password, google_id) VALUES ($1, $2, $3, $4) RETURNING id, username, email',
+                    [username, email, hashedPassword, googleId]
                 );
                 const newUser = newUserResult.rows[0];
                 await db.query('INSERT INTO leaderboards (account_id) VALUES ($1)', [newUser.id]);
@@ -561,6 +580,7 @@ app.get('/api/game/daily', async (req, res) => {
 
 // Create Table
 app.post('/api/lobby/create', async (req, res) => {
+    console.log("👉 /api/lobby/create CALLED");
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
     if (!token) return res.status(401).json({ error: 'Unauthorized' });
@@ -568,23 +588,31 @@ app.post('/api/lobby/create', async (req, res) => {
     try {
         const decoded = jwt.verify(token, JWT_SECRET);
         const hostId = decoded.id;
+        console.log("👤 Host ID:", hostId);
+
         const { name, password, isPrivate, mode, maxPlayers } = req.body;
+        console.log("📦 Body:", { name, isPrivate, mode, maxPlayers });
 
         if (!name) return res.status(400).json({ error: 'Table name is required' });
 
         // Enforce Single Table Rule: Remove user from any other tables
+        console.log("🗑️ Deleting old memberships...");
         await db.query('DELETE FROM table_members WHERE account_id = $1', [hostId]);
-        // Clean up empty tables
+
+        console.log("🗑️ Cleaning empty tables...");
         await db.query('DELETE FROM game_tables WHERE id NOT IN (SELECT table_id FROM table_members)');
 
         // Create table
+        console.log("🛠️ Inserting game_table...");
         const tableResult = await db.query(
             'INSERT INTO game_tables (name, password, is_private, host_id, mode, max_players, status) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id',
             [name, password || null, isPrivate || false, hostId, mode || 'Casual', maxPlayers || 4, 'waiting']
         );
         const tableId = tableResult.rows[0].id;
+        console.log("✅ Table Created:", tableId);
 
         // Add host as member
+        console.log("👤 Adding host to table...");
         await db.query(
             'INSERT INTO table_members (table_id, account_id, is_ready, session_points) VALUES ($1, $2, $3, $4)',
             [tableId, hostId, false, 0]
@@ -592,8 +620,8 @@ app.post('/api/lobby/create', async (req, res) => {
 
         res.json({ message: 'Table created', tableId });
     } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Server error' });
+        console.error("❌ CREATE TABLE ERROR:", err);
+        res.status(500).json({ error: 'Server error', details: err.message });
     }
 });
 

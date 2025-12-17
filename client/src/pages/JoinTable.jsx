@@ -3,6 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Lock, Users, ArrowLeft } from 'lucide-react';
 import PasswordModal from '../components/PasswordModal';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
 const JoinTable = () => {
     const { tableId } = useParams();
     const [searchTerm, setSearchTerm] = useState('');
